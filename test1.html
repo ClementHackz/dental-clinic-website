@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Clinic</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background-color: #0077b6; color: white; padding: 1em; text-align: center; }
+    nav { display: flex; justify-content: center; background-color: #023e8a; }
+    nav a { color: white; margin: 0 1em; text-decoration: none; padding: 0.5em; }
+    nav a:hover { background-color: #00b4d8; }
+    .container { padding: 2em; max-width: 1200px; margin: auto; }
+    .hero { background: #caf0f8; padding: 2em; text-align: center; }
+    .section { margin: 2em 0; }
+    form { display: flex; flex-direction: column; max-width: 500px; margin: auto; }
+    input, textarea, select { margin: 0.5em 0; padding: 0.5em; }
+    button { background-color: #0077b6; color: white; padding: 0.5em; border: none; cursor: pointer; }
+    button:hover { background-color: #0096c7; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bright Smile Dental Clinic</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#register">Register</a>
+    <a href="#appointment">Book Appointment</a>
+    <a href="#login">Login</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="hero">
+    <h2>Welcome to Bright Smile Dental</h2>
+    <p>Gentle, caring dentistry for your whole family</p>
+    <button>Book Appointment</button>
+  </section>
+
+  <section id="about" class="container section">
+    <h2>About Us</h2>
+    <p>We are a friendly team of dental professionals committed to keeping your smile healthy and bright. Our clinic has served the community for over 15 years with dedication and care.</p>
+    <h3>Meet the Team</h3>
+    <p>Dr. A. Smith - General Dentist<br>Dr. L. Chen - Orthodontist<br>Sarah, RDH - Dental Hygienist</p>
+  </section>
+
+  <section id="services" class="container section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>General Dentistry</li>
+      <li>Cosmetic Dentistry</li>
+      <li>Orthodontics</li>
+    </ul>
+    <p><strong>FAQs:</strong> Contact us for common dental queries.</p>
+  </section>
+
+  <section id="register" class="container section">
+    <h2>Patient Registration</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="date" placeholder="Date of Birth" required>
+      <input type="text" placeholder="Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <label><input type="checkbox"> I agree to the privacy policy</label>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <section id="appointment" class="container section">
+    <h2>Book Appointment</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <select required>
+        <option value="">Select Service</option>
+        <option>Cleaning</option>
+        <option>Filling</option>
+        <option>Braces</option>
+      </select>
+      <input type="date" required>
+      <input type="time" required>
+      <button type="submit">Submit Appointment</button>
+    </form>
+  </section>
+
+  <section id="login" class="container section">
+    <h2>Patient Login</h2>
+    <form>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <a href="#">Forgot Password?</a>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bright Smile Dental Clinic | Address | Phone | Email | Social Media</p>
+  </footer>
+</body>
+</html>
